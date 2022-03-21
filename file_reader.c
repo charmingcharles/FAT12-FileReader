@@ -3,7 +3,6 @@
 #include <stdlib.h>
 #include <memory.h>
 #include "file_reader.h"
-#include "rdebug.h"
 
 int* fat_read(volume_t* volume, uint32_t first_sector){
     uint8_t *fat1_data = (uint8_t *) malloc(volume->super_sector->bytes_per_sector * volume->super_sector->sectors_per_fat);
